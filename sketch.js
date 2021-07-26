@@ -61,10 +61,13 @@ function draw()
   background(51);
   Engine.update(engine);
   
-  if(keydown("up")
-     {
-      con =0
-     }
+  con = Matter.Constraint.create({
+    pointA:{x:200,y:20},
+    bodyB:{x:200,y:20},
+    pointB:{x:0,y:0},
+    length:100,
+    stiffness:0.1
+  });
 
   ellipse(ball.position.x,ball.position.y,20);
   ground.show();
