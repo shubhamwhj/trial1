@@ -62,9 +62,10 @@ function draw()
   Engine.update(engine);
   if(keydown("up")
      {
+     console.log("Key")
      con = Matter.Constraint.create({
     pointA:{x:200,y:20},
-    bodyB:ball,
+    bodyB:{x:200,y:20},
     pointB:{x:0,y:0},
     length:100,
     stiffness:0.1
