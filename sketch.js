@@ -60,8 +60,9 @@ function draw()
 {
   background(51);
   Engine.update(engine);
-  
-  con = Matter.Constraint.create({
+  if(keydown("up")
+     {
+     con = Matter.Constraint.create({
     pointA:{x:200,y:20},
     bodyB:ball,
     pointB:{x:0,y:0},
@@ -69,6 +70,8 @@ function draw()
     stiffness:0.1
   });
 
+     }
+  
   ellipse(ball.position.x,ball.position.y,20);
   ground.show();
   strokeWeight(2);
