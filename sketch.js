@@ -60,7 +60,7 @@ function draw()
 {
   background(51);
   Engine.update(engine);
-  if(keydown("up"))
+  if(keyDown("up"))
      {
      console.log("Key")
      con = Matter.Constraint.create({
