@@ -61,7 +61,7 @@ function draw()
   background(51);
   Engine.update(engine);
   
-  
+  ball.position.x=100000000
 
   ellipse(ball.position.x,ball.position.y,20);
   ground.show();
